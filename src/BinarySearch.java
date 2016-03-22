@@ -42,21 +42,21 @@ public class BinarySearch {
 		 Scanner in = new Scanner(System.in);
 		 System.out.println("Enter x :");
 		 int x = in.nextInt();
-		int foundX = iterativeFindBinary(arr, 0, arr.length-1 , x);
-		
-		if(foundX >= 0)
-			System.out.println("\n The x "+ x +" is at the index "+ foundX + " using iterative approach.");
+		  
+		 if (iterativeFindBinary(arr, 0, arr.length-1 , x) >= 0)  
+		//if(foundX >= 0)
+			  System.out.println("\n The x "+ x +" is at the index "+ iterativeFindBinary(arr, 0, arr.length-1 , x) + " using iterative approach.");
 		else
-			System.out.println("\n The x "+ x +" is not found in array using iterative approach.");
+			  System.out.println("\n The x "+ x +" is not found in array using iterative approach.");
 
 		 System.out.println("Enter y :");
 		 int y = in.nextInt();
-		int foundY = recursiveFindBinary(arr, 0, arr.length-1 , y);
 		
-		if(foundY >= 0)
-			System.out.println("\n The y "+ y +" is at the index "+ foundY + " using recursive approach.");
+		 if (recursiveFindBinary(arr, 0, arr.length-1 , y) >= 0)	
+	//	if(foundY >= 0)
+			  System.out.println("\n The y "+ y +" is at the index "+ recursiveFindBinary(arr, 0, arr.length-1 , y) + " using recursive approach.");
 		else
-			System.out.println("\n The y "+ y +" is not found in array using recursive approach.");
+			  System.out.println("\n The y "+ y +" is not found in array using recursive approach.");
 		
 	}
 
