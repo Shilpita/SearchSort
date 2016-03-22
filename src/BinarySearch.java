@@ -1,5 +1,11 @@
-import java.util.Scanner;
+/*********************************************************************************************
+ * author : Shilpita Roy
+ * date   : 21 March 2016
+ * purpose: Binary search for integer in a array using iterative and recursive approach
+ *********************************************************************************************/
 
+import java.util.Scanner;
+// Iterative approach for Binary search of integer. Complexity O(n)
 public class BinarySearch {
 	private static int iterativeFindBinary(int[] arr, int low, int high, int x){	
 		int m ;
@@ -16,7 +22,7 @@ public class BinarySearch {
 		}
 		return -1;
 	}
- 
+// Recursive approach for Binary search of integer. Complexity O(Log n)
 	private static int recursiveFindBinary (int[] arr , int low ,int high , int x){
 		if(low <= high){
 			int m = (high + low)/2;
@@ -31,7 +37,8 @@ public class BinarySearch {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr ={0, 4, 11, 22, 46, 56, 61, 89, 99, 101, 234, 876, 900};
+		//int[] arr ={0, 4, 11, 22, 46, 56, 61, 89, 99, 101, 234, 876, 900};
+		  int[] arr = { -1, -1, 1, 3};
 		 Scanner in = new Scanner(System.in);
 		 System.out.println("Enter x :");
 		 int x = in.nextInt();
